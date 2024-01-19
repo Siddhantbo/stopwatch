@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stop Watch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body style=" background-color:#EBD9B4;">
+    <div class="container">
+        <div class="sw-watch col-md-10">
+            <h1 id="heading">Stop Watch</h1>
+            <div id="sw-time">
+                <h1 id="minutes">00 </h1><span id="dot">:</span>
+                <h1 id="seconds">00</h1><span id="dot">:</span>
+                <h1 id="mseconds">00</h1>
+                <div id="timeheading">
+                    <h3>Mins</h3>
+                    <h3>Sec</h3>
+                    <h3>MSec</h3>
+                </div>
+            </div>
+            <div id="sw-button">
+                <button id="start" onclick="start()">Start</button>
+                <button id="pause" onclick="pause()">Pause</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <h1 id="heading_history">History<br></h1>
+    <p id="del-record">Click To Delete the Record</p><hr>
+    <div id="sw-history">
+    </div>
+</body>
+    <script src='app.js'></script>
+</html>
